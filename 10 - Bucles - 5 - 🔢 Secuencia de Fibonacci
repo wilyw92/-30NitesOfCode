@@ -1,0 +1,18 @@
+
+// Variables para los dos primeros números de Fibonacci
+let firstFib = 0;
+let secondFib = 1;
+
+// Imprimir los dos primeros números de Fibonacci
+console.log(firstFib); // 0
+console.log(secondFib); // 1
+
+// Generar los siguientes números de Fibonacci
+for (let i = 2; i < 10; i++) { // Comienza en 2 porque ya imprimimos los dos primeros números
+    let nextFib = firstFib + secondFib; // Siguiente número de Fibonacci
+    console.log(nextFib); // Imprime el siguiente número
+
+// Actualizar las variables para el próximo cálculo
+  firstFib = secondFib;
+  secondFib = nextFib;
+}
